@@ -21,4 +21,8 @@ export class AppService {
       )
       .splice(query.offset * query.limit, query.limit);
   }
+
+  getOneEmployeeById(id: Employee['id']): Employee {
+    return EMPLOYEES.find((employee) => employee.id === id);
+  }
 }

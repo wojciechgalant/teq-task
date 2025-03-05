@@ -1,4 +1,4 @@
-import { Controller, Get, Query } from '@nestjs/common';
+import { Controller, Get, Param, Query } from '@nestjs/common';
 import { AppService } from './app.service';
 import { Employee } from '@teq-task/shared';
 import { SortOption } from 'shared/src/lib/common.model';
@@ -24,5 +24,10 @@ export class AppController {
       search,
       department,
     });
+  }
+
+  @Get('employees/:id')
+  getOneEmployeeById(@Param('id') id: Employee['id']): Employee {
+    return this.appService.getOneEmployeeById(id);
   }
 }
