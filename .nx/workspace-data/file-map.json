@@ -34,7 +34,7 @@
     "nonProjectFiles": [
       {
         "file": ".gitignore",
-        "hash": "12380019812230934139"
+        "hash": "8823117254287710177"
       },
       {
         "file": ".prettierignore",
@@ -70,7 +70,7 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "2643183841054000348"
+        "hash": "1615202057442827647"
       },
       {
         "file": "package.json",
@@ -82,6 +82,188 @@
       }
     ],
     "projectFileMap": {
+      "frontend": [
+        {
+          "file": "frontend/eslint.config.mjs",
+          "hash": "15052851186193004871",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "frontend/jest.config.ts",
+          "hash": "14458212970000463922"
+        },
+        {
+          "file": "frontend/project.json",
+          "hash": "879721199216568168"
+        },
+        {
+          "file": "frontend/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "frontend/src/app/app.component.html",
+          "hash": "17816966185630879015"
+        },
+        {
+          "file": "frontend/src/app/app.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/src/app/app.component.spec.ts",
+          "hash": "15007331306060861354",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "frontend/src/app/app.component.ts",
+          "hash": "11154255625066137760",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "frontend/src/app/app.config.ts",
+          "hash": "6137170128205633588",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "frontend/src/app/app.routes.ts",
+          "hash": "6185150965714414910",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "frontend/src/index.html",
+          "hash": "10958459893752702268"
+        },
+        {
+          "file": "frontend/src/main.ts",
+          "hash": "16635586463787978962",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "frontend/src/styles.scss",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "frontend/src/test-setup.ts",
+          "hash": "1917999429567095215",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "frontend/tsconfig.app.json",
+          "hash": "13344354189090010831"
+        },
+        {
+          "file": "frontend/tsconfig.editor.json",
+          "hash": "1055794200401717100"
+        },
+        {
+          "file": "frontend/tsconfig.json",
+          "hash": "932891425719500747"
+        },
+        {
+          "file": "frontend/tsconfig.spec.json",
+          "hash": "2129196202529263968"
+        }
+      ],
+      "backend-e2e": [
+        {
+          "file": "backend-e2e/eslint.config.mjs",
+          "hash": "9036454466467975933"
+        },
+        {
+          "file": "backend-e2e/jest.config.ts",
+          "hash": "11549239295235047736"
+        },
+        {
+          "file": "backend-e2e/project.json",
+          "hash": "1188065140152122076"
+        },
+        {
+          "file": "backend-e2e/src/backend/backend.spec.ts",
+          "hash": "110394728024017389",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "backend-e2e/src/support/global-setup.ts",
+          "hash": "2568409276037275290"
+        },
+        {
+          "file": "backend-e2e/src/support/global-teardown.ts",
+          "hash": "5275447082211835490"
+        },
+        {
+          "file": "backend-e2e/src/support/test-setup.ts",
+          "hash": "15521797170623961900",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "backend-e2e/tsconfig.json",
+          "hash": "2346920493880922870"
+        },
+        {
+          "file": "backend-e2e/tsconfig.spec.json",
+          "hash": "14226830188665428950"
+        }
+      ],
+      "shared": [
+        {
+          "file": "shared/README.md",
+          "hash": "10464589154510889842"
+        },
+        {
+          "file": "shared/eslint.config.mjs",
+          "hash": "4091582388737462168",
+          "deps": [
+            [
+              "npm:jsonc-eslint-parser",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "shared/package.json",
+          "hash": "4595662728170888121"
+        },
+        {
+          "file": "shared/project.json",
+          "hash": "1115875508346230431"
+        },
+        {
+          "file": "shared/src/index.ts",
+          "hash": "15721632429446788800"
+        },
+        {
+          "file": "shared/src/lib/shared.ts",
+          "hash": "3815621113879200261"
+        },
+        {
+          "file": "shared/tsconfig.json",
+          "hash": "14348528073521137485"
+        },
+        {
+          "file": "shared/tsconfig.lib.json",
+          "hash": "9908975088309596753"
+        }
+      ],
       "backend": [
         {
           "file": "backend/eslint.config.mjs",
@@ -135,156 +317,6 @@
           ]
         }
       ],
-      "backend-e2e": [
-        {
-          "file": "backend-e2e/eslint.config.mjs",
-          "hash": "9036454466467975933"
-        },
-        {
-          "file": "backend-e2e/jest.config.ts",
-          "hash": "11549239295235047736"
-        },
-        {
-          "file": "backend-e2e/project.json",
-          "hash": "1188065140152122076"
-        },
-        {
-          "file": "backend-e2e/src/backend/backend.spec.ts",
-          "hash": "110394728024017389",
-          "deps": [
-            "npm:axios"
-          ]
-        },
-        {
-          "file": "backend-e2e/src/support/global-setup.ts",
-          "hash": "2568409276037275290"
-        },
-        {
-          "file": "backend-e2e/src/support/global-teardown.ts",
-          "hash": "5275447082211835490"
-        },
-        {
-          "file": "backend-e2e/src/support/test-setup.ts",
-          "hash": "15521797170623961900",
-          "deps": [
-            "npm:axios"
-          ]
-        },
-        {
-          "file": "backend-e2e/tsconfig.json",
-          "hash": "2346920493880922870"
-        },
-        {
-          "file": "backend-e2e/tsconfig.spec.json",
-          "hash": "14226830188665428950"
-        }
-      ],
-      "frontend": [
-        {
-          "file": "frontend/eslint.config.mjs",
-          "hash": "15052851186193004871",
-          "deps": [
-            "npm:@nx/eslint-plugin"
-          ]
-        },
-        {
-          "file": "frontend/jest.config.ts",
-          "hash": "14458212970000463922"
-        },
-        {
-          "file": "frontend/project.json",
-          "hash": "879721199216568168"
-        },
-        {
-          "file": "frontend/public/favicon.ico",
-          "hash": "9303420814833116677"
-        },
-        {
-          "file": "frontend/src/app/app.component.html",
-          "hash": "11987652264972370457"
-        },
-        {
-          "file": "frontend/src/app/app.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "frontend/src/app/app.component.spec.ts",
-          "hash": "15007331306060861354",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "frontend/src/app/app.component.ts",
-          "hash": "5917180775997424605",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "frontend/src/app/app.config.ts",
-          "hash": "6137170128205633588",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "frontend/src/app/app.routes.ts",
-          "hash": "6185150965714414910",
-          "deps": [
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "frontend/src/app/nx-welcome.component.ts",
-          "hash": "11093562801223941942",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common"
-          ]
-        },
-        {
-          "file": "frontend/src/index.html",
-          "hash": "10958459893752702268"
-        },
-        {
-          "file": "frontend/src/main.ts",
-          "hash": "16635586463787978962",
-          "deps": [
-            "npm:@angular/platform-browser"
-          ]
-        },
-        {
-          "file": "frontend/src/styles.scss",
-          "hash": "5195668842064076916"
-        },
-        {
-          "file": "frontend/src/test-setup.ts",
-          "hash": "1917999429567095215",
-          "deps": [
-            "npm:jest-preset-angular"
-          ]
-        },
-        {
-          "file": "frontend/tsconfig.app.json",
-          "hash": "13344354189090010831"
-        },
-        {
-          "file": "frontend/tsconfig.editor.json",
-          "hash": "1055794200401717100"
-        },
-        {
-          "file": "frontend/tsconfig.json",
-          "hash": "932891425719500747"
-        },
-        {
-          "file": "frontend/tsconfig.spec.json",
-          "hash": "2129196202529263968"
-        }
-      ],
       "frontend-e2e": [
         {
           "file": "frontend-e2e/eslint.config.mjs",
@@ -316,46 +348,6 @@
         {
           "file": "frontend-e2e/tsconfig.json",
           "hash": "14941078738293929780"
-        }
-      ],
-      "shared": [
-        {
-          "file": "shared/README.md",
-          "hash": "10464589154510889842"
-        },
-        {
-          "file": "shared/eslint.config.mjs",
-          "hash": "4091582388737462168",
-          "deps": [
-            [
-              "npm:jsonc-eslint-parser",
-              "dynamic"
-            ]
-          ]
-        },
-        {
-          "file": "shared/package.json",
-          "hash": "4595662728170888121"
-        },
-        {
-          "file": "shared/project.json",
-          "hash": "1115875508346230431"
-        },
-        {
-          "file": "shared/src/index.ts",
-          "hash": "15721632429446788800"
-        },
-        {
-          "file": "shared/src/lib/shared.ts",
-          "hash": "3815621113879200261"
-        },
-        {
-          "file": "shared/tsconfig.json",
-          "hash": "14348528073521137485"
-        },
-        {
-          "file": "shared/tsconfig.lib.json",
-          "hash": "9908975088309596753"
         }
       ]
     }
