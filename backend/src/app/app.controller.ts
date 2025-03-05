@@ -1,6 +1,6 @@
-import { Controller, Get, Param, Query } from '@nestjs/common';
+import { Controller, Get, Param, Post, Query } from '@nestjs/common';
 import { AppService } from './app.service';
-import { Employee } from '@teq-task/shared';
+import { Employee, OffboardUserResponse } from '@teq-task/shared';
 import { SortOption } from 'shared/src/lib/common.model';
 
 @Controller()
@@ -29,5 +29,10 @@ export class AppController {
   @Get('employees/:id')
   getOneEmployeeById(@Param('id') id: Employee['id']): Employee {
     return this.appService.getOneEmployeeById(id);
+  }
+
+  @Post('/users/:id/offboard')
+  postOffboardUser(@Param('id') id: Employee['id']): OffboardUserResponse {
+    return { status: 200, message: `User ${id} was successfully offboarded` };
   }
 }
