@@ -2,7 +2,9 @@
   "name": "@teq-task/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "format": "npx prettier --write . "
+  },
   "private": true,
   "devDependencies": {
     "@angular-devkit/build-angular": "~19.1.0",
