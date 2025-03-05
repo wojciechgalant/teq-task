@@ -1,0 +1,31 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.4.6",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".gitignore",
+        "hash": "2303642404724327591"
+      },
+      {
+        "file": "README.md",
+        "hash": "7595029547381027409"
+      },
+      {
+        "file": "nx.json",
+        "hash": "14977852485590650733"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "16789974674842544511"
+      },
+      {
+        "file": "package.json",
+        "hash": "7944383338204173460"
+      }
+    ],
+    "projectFileMap": {}
+  }
+}
