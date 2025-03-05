@@ -1,12 +1,28 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Query } from '@nestjs/common';
 import { AppService } from './app.service';
+import { Employee } from '@teq-task/shared';
+import { SortOption } from 'shared/src/lib/common.model';
 
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get()
-  getData() {
-    return this.appService.getData();
+  @Get('employees')
+  getEmployees(
+    @Query('offset') offset = 0,
+    @Query('limit') limit = 10,
+    @Query('sortBy') sortBy = 'name',
+    @Query('order') order: SortOption = SortOption.ASC,
+    @Query('search') search?: string,
+    @Query('department') department?: string
+  ): Employee[] {
+    return this.appService.getAllEmployees({
+      offset,
+      limit,
+      sortBy,
+      order,
+      search,
+      department,
+    });
   }
 }
