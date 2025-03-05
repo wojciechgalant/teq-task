@@ -1,7 +1,11 @@
 {
   "version": "6.0",
   "nxVersion": "20.4.6",
-  "pathMappings": {},
+  "pathMappings": {
+    "@teq-task/shared": [
+      "shared/src/index.ts"
+    ]
+  },
   "nxJsonPlugins": [
     {
       "name": "@nx/playwright/plugin",
@@ -29,24 +33,8 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "jest.config.ts",
-        "hash": "3494843969422251966"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "16936441711144470533"
-      },
-      {
-        "file": "nx.json",
-        "hash": "5820579545633746535"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "9430166341120122740"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "13377419431693519786"
+        "file": ".gitignore",
+        "hash": "12380019812230934139"
       },
       {
         "file": ".prettierignore",
@@ -57,8 +45,8 @@
         "hash": "16267754514737964994"
       },
       {
-        "file": ".gitignore",
-        "hash": "12380019812230934139"
+        "file": ".vscode/extensions.json",
+        "hash": "13377419431693519786"
       },
       {
         "file": "README.md",
@@ -69,46 +57,82 @@
         "hash": "3462096019013144053"
       },
       {
+        "file": "jest.config.ts",
+        "hash": "3494843969422251966"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "nx.json",
+        "hash": "5963016152297140301"
+      },
+      {
         "file": "package-lock.json",
-        "hash": "16520261016560412018"
+        "hash": "2643183841054000348"
       },
       {
         "file": "package.json",
-        "hash": "10155319050028285427"
+        "hash": "2119188566705155851"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "5402227788965101701"
       }
     ],
     "projectFileMap": {
-      "frontend-e2e": [
+      "backend": [
         {
-          "file": "frontend-e2e/eslint.config.mjs",
-          "hash": "9406519109376614868",
+          "file": "backend/eslint.config.mjs",
+          "hash": "9036454466467975933"
+        },
+        {
+          "file": "backend/project.json",
+          "hash": "7315512820165240398"
+        },
+        {
+          "file": "backend/src/app/app.controller.spec.ts",
+          "hash": "7647647754668916054"
+        },
+        {
+          "file": "backend/src/app/app.controller.ts",
+          "hash": "15276891910009544695"
+        },
+        {
+          "file": "backend/src/app/app.module.ts",
+          "hash": "11673476679848632172"
+        },
+        {
+          "file": "backend/src/app/app.service.spec.ts",
+          "hash": "13111976464657524091"
+        },
+        {
+          "file": "backend/src/app/app.service.ts",
+          "hash": "9967902337593410053"
+        },
+        {
+          "file": "backend/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "backend/src/main.ts",
+          "hash": "150780270862474464"
+        },
+        {
+          "file": "backend/tsconfig.app.json",
+          "hash": "5519104792858008127"
+        },
+        {
+          "file": "backend/tsconfig.json",
+          "hash": "4276712839166217253"
+        },
+        {
+          "file": "backend/webpack.config.js",
+          "hash": "1279870486852937806",
           "deps": [
-            "npm:eslint-plugin-playwright"
+            "npm:@nx/webpack"
           ]
-        },
-        {
-          "file": "frontend-e2e/playwright.config.ts",
-          "hash": "640036563108129274",
-          "deps": [
-            "npm:@playwright/test",
-            "npm:@nx/playwright",
-            "npm:@nx/devkit"
-          ]
-        },
-        {
-          "file": "frontend-e2e/project.json",
-          "hash": "16623643415870234688"
-        },
-        {
-          "file": "frontend-e2e/src/example.spec.ts",
-          "hash": "16019101014373124625",
-          "deps": [
-            "npm:@playwright/test"
-          ]
-        },
-        {
-          "file": "frontend-e2e/tsconfig.json",
-          "hash": "14941078738293929780"
         }
       ],
       "backend-e2e": [
@@ -261,57 +285,77 @@
           "hash": "2129196202529263968"
         }
       ],
-      "backend": [
+      "frontend-e2e": [
         {
-          "file": "backend/eslint.config.mjs",
-          "hash": "9036454466467975933"
-        },
-        {
-          "file": "backend/project.json",
-          "hash": "7315512820165240398"
-        },
-        {
-          "file": "backend/src/app/app.controller.spec.ts",
-          "hash": "7647647754668916054"
-        },
-        {
-          "file": "backend/src/app/app.controller.ts",
-          "hash": "15276891910009544695"
-        },
-        {
-          "file": "backend/src/app/app.module.ts",
-          "hash": "11673476679848632172"
-        },
-        {
-          "file": "backend/src/app/app.service.spec.ts",
-          "hash": "13111976464657524091"
-        },
-        {
-          "file": "backend/src/app/app.service.ts",
-          "hash": "9967902337593410053"
-        },
-        {
-          "file": "backend/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "backend/src/main.ts",
-          "hash": "150780270862474464"
-        },
-        {
-          "file": "backend/tsconfig.app.json",
-          "hash": "5519104792858008127"
-        },
-        {
-          "file": "backend/tsconfig.json",
-          "hash": "4276712839166217253"
-        },
-        {
-          "file": "backend/webpack.config.js",
-          "hash": "1279870486852937806",
+          "file": "frontend-e2e/eslint.config.mjs",
+          "hash": "9406519109376614868",
           "deps": [
-            "npm:@nx/webpack"
+            "npm:eslint-plugin-playwright"
           ]
+        },
+        {
+          "file": "frontend-e2e/playwright.config.ts",
+          "hash": "640036563108129274",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "frontend-e2e/project.json",
+          "hash": "16623643415870234688"
+        },
+        {
+          "file": "frontend-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "frontend-e2e/tsconfig.json",
+          "hash": "14941078738293929780"
+        }
+      ],
+      "shared": [
+        {
+          "file": "shared/README.md",
+          "hash": "10464589154510889842"
+        },
+        {
+          "file": "shared/eslint.config.mjs",
+          "hash": "4091582388737462168",
+          "deps": [
+            [
+              "npm:jsonc-eslint-parser",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "shared/package.json",
+          "hash": "4595662728170888121"
+        },
+        {
+          "file": "shared/project.json",
+          "hash": "1115875508346230431"
+        },
+        {
+          "file": "shared/src/index.ts",
+          "hash": "15721632429446788800"
+        },
+        {
+          "file": "shared/src/lib/shared.ts",
+          "hash": "3815621113879200261"
+        },
+        {
+          "file": "shared/tsconfig.json",
+          "hash": "14348528073521137485"
+        },
+        {
+          "file": "shared/tsconfig.lib.json",
+          "hash": "9908975088309596753"
         }
       ]
     }
